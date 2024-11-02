@@ -1,13 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as mp
 
-dataframe = pd.read_csv('MedicalDatasetVision.csv')
-amountOfAsian = dataframe['RaceEthnicityID']
+df = pd.read_csv('MedicalDatasetVision.csv')
 
-
-
-#amountOfAsian = dataframe[dataframe["RaceEthnicity"] == "Asian"].count()
-
-
-mp.hist(dataframe["Age"])
-mp.show()
+for item in df['Sample_Size']:
+    test = item
